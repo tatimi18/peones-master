@@ -1,0 +1,49 @@
+.main
+    &__flower
+        position: absolute
+        left: 556px
+        top: 604px
+
+nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.main-parts
+    display: flex
+    justify-content: space-between
+    width: 852px
+    &__item
+        padding: 10px 21px
+        font-family: 'Montserrat'
+        font-weight: 500
+        font-size: 16px
+        color: $white_color
+        border: 2px solid rgba(0, 0, 0, 0)
+        transition: 0.5s all
+        text-decoration-line: none
+        &:hover
+            color: $pink_color
+            border: 2px solid $pink_color
+            text-decoration: none
+        
+
+.main-search
+    justify-content: space-between
+    display: flex
+    width: 229px
+    height: 27px
+    &__textarea
+        padding: 4px
+        background-color: rgba(0, 0, 0, 0)
+        font-family: 'Montserrat'
+        font-weight: 500
+        font-size: 18px
+        border: none
+        border-bottom: 1px solid $grey_color
+        &:focus
+            color: $white_color
+
+textarea::placeholder
+    color: $white_color
+
