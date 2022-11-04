@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 //плавный скролл
-$( document ).ready(function() {
+$(document).ready(function() {
 		$('a[href^="#"').on('click', function() {
 
 			let href = $(this).attr('href');
@@ -36,29 +36,28 @@ $( document ).ready(function() {
 	const validateForm = (form) => {
 		$(form).validate({
 			rules: {
-				mainName: {
+				name: {
 					required: true,
 					minlength: 2
 				},
-				mainTelephone: {
+				tel: {
 					required: true,
-					number: true
 				},
-				mainEmail: {
+				email: {
 					required: true,
 					email: true
 				}
 			},
 			messages: {
-				mainName: {
+				name: {
 					required: "Введите свое имя",
 					minlength: jQuery.validator.format("Введите минимум {0} символа!")
 				},
-				mainTelephone: {
+				tel: {
 					required: "Введите свой номер телефона",
 					number: "Формат ввода +7(999)-99-99"
 				},
-				mainEmail: {
+				email: {
 					required: "Введите свою почту",
 					email: "Формат ввода example@domain.ru"
 				}
@@ -68,6 +67,8 @@ $( document ).ready(function() {
 
 	validateForm('#mainform');
 	
+	//маска ввода номера телефона
+	$('input[name=tel]').mask("+7 (999) 999 - 99 - 99");
 
 		
 });
