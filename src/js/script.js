@@ -70,6 +70,30 @@ $(document).ready(function() {
 	//маска ввода номера телефона
 	$('input[name=tel]').mask("+7 (999) 999 - 99 - 99");
 
+	//технология AJAX - после отправки формы страница не будет перезагружаться + отправка данных на сервер
+	$('form').submit((e) => {
+		//отмена действий браузера по умолчанию
+		e.preventDefault();
+
+		//проверка прохождения валидации
+		if (!$(this).valid()) {
+			return;
+		}
+
+		//отправка данных на сервер
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize() //подготовка данных к отправке
+		}).done(function() {
+			$(this).find("input").val(""); //очистка инпутов
+
+
+			$('form').trigger('reset'); //удаление данных
+		});
+		return false;
+	});
+
 		
 });
 

@@ -239,7 +239,7 @@
                     </div>
                 </div>
             </div>
-            <form action="#" name="main" id="mainform" class="form-main">
+            <form action="mailer/smart.php" method="post" name="main" id="mainform" class="form-main">
                 <div class="form__title form__title__black">Оставьте заявку на обратный звонок:</div>
                 <div class="form-column">
                     <div class="form-main__item">
@@ -258,7 +258,7 @@
 
                 <div class="form-column form-column__second">
                     <label for="input_4" class="form__subtitle form__subtitle__grey">Сообщение:</label>
-                    <textarea tabindex="4" id="input_4" type="text" name="mainTextarea" class="form-main__textarea" placeholder="Введите Ваше сообщение" autocomplete="off" onfocus="if (this.placeholder == 'Введите Ваше сообщение') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше сообщение';}"></textarea>
+                    <textarea tabindex="4" id="input_4" type="text" name="message" class="form-main__textarea" placeholder="Введите Ваше сообщение" autocomplete="off" onfocus="if (this.placeholder == 'Введите Ваше сообщение') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше сообщение';}"></textarea>
                     <button type="submit" class="button button__form">Оставить заявку</button>
                 </div>
                 
@@ -313,10 +313,10 @@
                 </div>
             </div>
             <div class="footer__block">
-                <form action="#" id="footer-form">
+                <form action="mailer/smart.php" method="post" id="footer-form">
                     <div class="footer__nav-title mb20px">Подписаться на новости</div>
-                    <input type="text" name="footerName" class="footer__input footer-name" placeholder="Имя" onfocus="if (this.placeholder == 'Имя') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Имя'; this.style.color = '#FFFFFF'}">
-                    <input type="email" name="footerEmail" class="footer__input footer-email" placeholder="E-mail" onfocus="if (this.placeholder == 'E-mail') {this.placeholder = ''; this.style.color = '#FFFFFF'}" onblur="if (this.placeholder == '') {this.placeholder = 'E-mail'; this.style.color = '#FFFFFF'}">
+                    <input type="text" name="name" class="footer__input footer-name" placeholder="Имя" onfocus="if (this.placeholder == 'Имя') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Имя'; this.style.color = '#FFFFFF'}">
+                    <input type="email" name="email" class="footer__input footer-email" placeholder="E-mail" onfocus="if (this.placeholder == 'E-mail') {this.placeholder = ''; this.style.color = '#FFFFFF'}" onblur="if (this.placeholder == '') {this.placeholder = 'E-mail'; this.style.color = '#FFFFFF'}">
                     <input type="submit" class="button__footer">Подписаться</input>
                 </form>
             </div>
@@ -333,7 +333,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
