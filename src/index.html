@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Peones</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.min.css">
@@ -11,18 +11,61 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="main" id="mainpage">
-        <div class="container">
-            <nav>
-                <div class="container-navbar">
-                    <div class="main-parts">
-                        <a href="#mainpage" class="main-parts__item">Главная</a>
-                        <a href="#catalog" class="main-parts__item">Каталог</a>
-                        <a href="#delivery-payment" class="main-parts__item">Доставка и оплата</a>
-                        <a href="#photogallery" class="main-parts__item">Фотогалерея</a>
-                        <a href="#about" class="main-parts__item">О нас</a>
-                        <a href="#contacts" class="main-parts__item">Контакты</a>
+    <div class="wrapper">
+        <!-- <section class="main" id="mainpage">
+            <div class="container">
+                <div class="main__burger">
+                    <span></span>
+                </div>
+                <nav>
+                    <div class="container-navbar">
+                        <div class="main-parts">
+                            <a href="#mainpage" class="main-parts__item">Главная</a>
+                            <a href="#catalog" class="main-parts__item">Каталог</a>
+                            <a href="#delivery-payment" class="main-parts__item">Доставка и оплата</a>
+                            <a href="#photogallery" class="main-parts__item">Фотогалерея</a>
+                            <a href="#about" class="main-parts__item">О нас</a>
+                            <a href="#contacts" class="main-parts__item">Контакты</a>
+                        </div>
+                        <div class="main-search">
+                            <textarea name="nameTextarea" id="" cols="11" rows="1" class="main-search__textarea" placeholder="Поиск" onfocus="if (this.placeholder == 'Поиск') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Поиск';}"></textarea>
+                            <a href=""><img src="icons/search_main.svg" alt="search" class="main-search__item"></a>
+                            <a href=""><img src="icons/bag_main.svg" alt="bag" class="main-search__item"></a>
+                            <a href=""><img src="icons/user_main.svg" alt="user" class="main-search__item"></a>
+                        </div>
+                        <div class="main-contacts">
+                            <a href="tel:+79036111388" class="main-contacts__tel">+7 (903) 611 - 13 - 88</a>
+                            <a href="mailto:peones@peones.ru" class="main-contacts__mail">mailto:peones@peones.ru</a>
+                        </div>
                     </div>
+                    
+                </nav>
+                <div class="main__title">Peones</div>
+                <div class="main__subtitle">Частная&nbspколлекция&nbspпионов <br> из&nbspСергиева&nbspПосада</div>
+                <button class="button">СМОТРЕТЬ КАТАЛОГ</button>
+                <img src="img/bg/flower_bg.png" alt="peace of flower" class="main__flower">
+            </div>
+        </section> -->
+        <section class="main" id="mainpage">
+            <div class="container">
+                <div class="oneLine">
+                    <nav>
+                        <div class="container-navbar">
+                            <ul class="main-parts">
+                               <li class="main-parts__li"><a href="#mainpage" class="main-parts__item">Главная</a></li>
+                               <li class="main-parts__li"><a href="#catalog" class="main-parts__item">Каталог</a></li>
+                               <li class="main-parts__li"><a href="#delivery-payment" class="main-parts__item">Доставка и оплата</a></li>
+                               <li class="main-parts__li"><a href="#photogallery" class="main-parts__item">Фотогалерея</a></li>
+                               <li class="main-parts__li"><a href="#about" class="main-parts__item">О нас</a></li>
+                               <li class="main-parts__li"><a href="#contacts" class="main-parts__item">Контакты</a></li>
+                            </ul>
+                            <div class="main__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </nav>
                     <div class="main-search">
                         <textarea name="nameTextarea" id="" cols="11" rows="1" class="main-search__textarea" placeholder="Поиск" onfocus="if (this.placeholder == 'Поиск') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Поиск';}"></textarea>
                         <a href=""><img src="icons/search_main.svg" alt="search" class="main-search__item"></a>
@@ -30,200 +73,254 @@
                         <a href=""><img src="icons/user_main.svg" alt="user" class="main-search__item"></a>
                     </div>
                 </div>
-                
-            </nav>
-            <div class="main__title">Peones</div>
-            <div class="main__subtitle">Частная коллекция пионов из Сергиева Посада</div>
-            <button class="button">СМОТРЕТЬ КАТАЛОГ</button>
-            <img src="img/bg/flower_bg.png" alt="peace of flower" class="main__flower">
-        </div>
-    </section>
-
-    <section class="catalog">
-<!--         ...-->   
-    </section>
-
-    <section class="tabs" id="delivery-payment">
-        <div class="container">
-            <ul class="tabs__list">
-                <li class="tabs__item"><button class="tabs__btn tabs__btn_active" data-tabs-path="delivery">Доставка</button></li>
-                <li class="tabs__item"><button class="tabs__btn" data-tabs-path="payment">Оплата</button></li>
-              </ul>
-
-              <div class="tabs__content tabs__content_active" data-tabs-target="delivery">
-                <div class="tabs-item">
-                    <div class="tabs-item__wrapper">
-                        <img src="icons/shopping-bag.svg" alt="shopping bag" class="tabs-item__img">
-                        <div class="tabs-item__wrapper-descr">
-                            <div class="tabs-item__title">Доставка курьерской службой CDEK</div>
-                            <div class="tabs-item__text">
-                                <p class="tabs-item__p">Доставка "до двери" недорогой и быстрой службой доставки CDEK</p>
-                                <p class="tabs-item__p">Доставка производится в более чем 19000 городов и населенных пунктов России</p>
-                            </div>
-                        </div>
-                        <div class="tabs-item__price">от 300 ₽</div>
-                    </div>
+                <div class="main-contacts">
+                    <a href="tel:+79036111388" class="main-contacts__tel">+7 (903) 611 - 13 - 88</a>
+                    <a href="mailto:peones@peones.ru" class="main-contacts__mail">peones@peones.ru</a>
                 </div>
-                <div class="tabs-item">
-                    <div class="tabs-item__wrapper">
-                        <img src="icons/box.svg" alt="box" class="tabs-item__img">
-                        <div class="tabs-item__wrapper-descr">
-                            <div class="tabs-item__title">Доставка Почтой России</div>
-                            <div class="tabs-item__text">
-                                <p class="tabs-item__p">Доставка заказа в ближайшее почтовое отделение</p>
-                                <p class="tabs-item__p">Заказы доставляются бандеролью или посылкой без объявленной ценности</p>
-                                <p class="tabs-item__p">Вы можете посмотреть контрольные сроки пересылки посылок, нормативы их обработки и перевозки</p>
-                                <p class="tabs-item__p">Стоимость доставки рассчитывается автоматически при оформлении заказа (наш магазин использует технологию <a href="//postcalc.ru">//postcalc.ru</a>)</p>
-                                <p class="tabs-item__p">Номера посылок высылаются на электронную почту на следующий рабочий день после отправки</p>
-                            </div>
-                        </div>
-                        <div class="tabs-item__price">от 250 ₽</div>
-                    </div>
-                </div>
-                <div class="tabs-item">
-                    <div class="tabs-item__wrapper">
-                        <img src="icons/map.svg" alt="map" class="tabs-item__img">
-                        <div class="tabs-item__wrapper-descr">
-                            <div class="tabs-item__title">Самовывоз</div>
-                            <div class="tabs-item__text">
-                                <p class="tabs-item__p">Удобный, бесплатный и быстрый способ получения заказа по адресу: Московская обл., г. Сергиев Посад, ул. Академика Силина, д. 1/22</p>
-                            </div>
-                        </div>
-                        <div class="tabs-item__price">бесплатно</div>
-                    </div>
-                </div>
-                <div class="tabs-item">
-                    <div class="tabs-item__wrapper">
-                        <img src="icons/car.svg" alt="car" class="tabs-item__img">
-                        <div class="tabs-item__wrapper-descr">
-                            <div class="tabs-item__title">Доставка до Московского терминала транспортной компании</div>
-                            <div class="tabs-item__text">
-                                <p class="tabs-item__p">Доставка до Московского терминала транспортной компании: Деловые Линии, ЖелДорЭкспедиция, ПЭК или Энергия</p>
-                                <p class="tabs-item__p">Отправка производится самым дешевым способом, без оценки</p>
-                                <p class="tabs-item__p">Если Вам нужны эти или другие опции - обязательно указывайте их в комментарии к заказу</p>
-                                <p class="tabs-item__p">При оформлении заказа указывайте паспортные данные!</p>
-                            </div>
-                        </div>
-                        <div class="tabs-item__price">бесплатно</div>
-                    </div>
-                </div>
-                </div>
-                <div class="tabs__content" data-tabs-target="payment">
-                    <div class="tabs-item">
-                        <div class="tabs-item__wrapper">
-                            <img src="icons/payment.svg" alt="payment" class="tabs-item__img">
-                            <div class="tabs-item__wrapper-descr">
-                                <div class="tabs-item__title">Перевод на банковскую карту</div>
-                                <div class="tabs-item__text tabs-item__text_second">
-                                    <p class="tabs-item__p">После подтверждения и оформления заказа Вам будет выставлен счет и выслан номер карты для осуществления перевода </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tabs-item">
-                        <div class="tabs-item__wrapper">
-                            <img src="icons/cash.svg" alt="cash" class="tabs-item__img">
-                            <div class="tabs-item__wrapper-descr">
-                                <div class="tabs-item__title">Оплата наличными курьеру </div>
-                                <div class="tabs-item__text tabs-item__text_second">
-                                    <p class="tabs-item__p">Заказанные товары оплачиваются наличными только при получении заказа в г. Сергиев Посад</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tabs-item">
-                        <div class="tabs-item__wrapper">
-                            <img src="icons/invoice.svg" alt="invoice" class="tabs-item__img">
-                            <div class="tabs-item__wrapper-descr">
-                                <div class="tabs-item__title">Оплата по счёту в электронном письме</div>
-                                <div class="tabs-item__text tabs-item__text_second">
-                                    <p class="tabs-item__p">После подтверждения и оформления заказа Вам будет выставлен счет с возможностью оплаты прямо из письма через систему Яндекс.Деньги</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tabs-item">
-                        <div class="tabs-item__wrapper">
-                            <img src="icons/credit-card.svg" alt="credit-card" class="tabs-item__img">
-                            <div class="tabs-item__wrapper-descr">
-                                <div class="tabs-item__title">Оплата в пунктах выдачи CDEK</div>
-                                <div class="tabs-item__text tabs-item__text_second">
-                                    <p class="tabs-item__p">В пунктах выдачи Москвы и Московской области можно оплатить заказ</p>
-                                    <p class="tabs-item__p">При получении наличными либо картой, при доставке в другие регионы требуется предварительная оплата заказа, оплата при получении невозможна</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-              </div>
-        </div>
-    </section>  
-
-    <div class="gallery" id="photogallery">
-        <div class="container">
-            <div class="title">Фотогалерея</div>
-            <div class="gallery__wrapper">
-                <a href="/img/gallery/girl_1_big.jpg" data-fancybox="gallery">
-                    <img src = "img/gallery/girl_1.jpg" alt ="picture 1" class="gallery__img gallery__img_without-padding">
-                </a>
-                <a href="/img/gallery/fl_1_big.jpg" data-fancybox="gallery">
-                    <img src = "img/gallery/fl_1.jpg" alt ="picture 2" class="gallery__img">
-                </a>
-                <a href="/img/gallery/fl_2.jpg" data-fancybox="gallery">
-                    <img src = "img/gallery/fl_2.jpg" alt ="picture 3" class="gallery__img">
-                </a>
-                <a href="/img/gallery/fl_3_big.jpg" data-fancybox="gallery">
-                    <img src = "img/gallery/fl_3.jpg" alt ="picture 4" class="gallery__img">
-                </a>
-                <a href="/img/gallery/fl_4_big.jpg" data-fancybox="gallery">
-                    <img src = "img/gallery/fl_4.jpg" alt ="picture 5" class="gallery__img">
-                </a>
-                <a href="/img/gallery/fl_5_big.jpg" data-fancybox="gallery">
-                    <img src = "img/gallery/fl_5.jpg" alt ="picture 6" class="gallery__img gallery__img_without-padding">
-                </a>
-                <a href="/img/gallery/girl_2_big.jpg" data-fancybox="gallery">
-                    <img src = "img/gallery/girl_2.jpg" alt ="picture 7" class="gallery__img">
-                </a>
-                <a href="/img/gallery/girl_3_big.jpg" data-fancybox="gallery">
-                    <img src = "img/gallery/girl_3.jpg" alt ="picture 8" class="gallery__img gallery__img_without-padding">
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <section class="about" id="about">
-        <div class="container">
-            <div class="title">О нас</div>
-            <div class="about__wrapper">
-                <img src="img/about/about_img.jpg" alt="about" class="about__img">
-                <div class="about__text">
-                    <p class="about__p nopadding">Друзья, приветствую Вас на&nbspсвоем сайте!</p>
-                    <p class="about__p">Если Вы читаете эти строки, то, возможно, Вы садовый фанат и&nbspищете что-нибудь интересное для своей новой или старой цветочной клумбы…Ну а если Вы еще и&nbspлюбитель пионов, то нам будет легко с Вами найти общий язык.</p>
-                    <p class="about__p">Давайте знакомиться! <br>
-                        Я, Христина Несмеянова, приветствую Вас на своем сайте Peones.ru, который&nbspполучил свое названия от слияния двух слов «Peony» и «Nesmeyanova» в&nbspодно “Peones”. Как Вы понимаете, пионы – это мое увлечение, и эта страница его&nbspлогическое продолжение.</p>
-                    <p class="about__p">По образованию я микробиолог, после окончания университета в начале трудовой деятельности работала в Москве в НИИ Молекулярной Генетики, затем на фармпроизводстве.</p>
-                    <p class="about__p">После рождения третьей дочери и переезда в новый дом в Сергиевом Посаде передала руководство микробиологической лабораторией и, сменив лабораторные перчатки на садовые, начала новый этап жизни, где обустройство своего сада и создание цветочной коллекции в нем стало не менее интересным занятием, чем валидация микробиологических методов анализа. Я и мои три&nbspдочки-помощницы обожаем пионы и выращиваем их у себя в саду для того, чтобы каждый год в начале лета проводить целый месяц в состоянии переполненного душевного подъема от созерцания невероятной красоты пионового поля в нашем саду. Это ежегодное гарантированное счастье по плану! И в любую погоду! Не говоря уже о том, что послевкусие останется еще&nbspи&nbspна&nbspдолгие зимние месяцы, на время составления свежего каталога коллекции с описанием новых сортов.</p>
+                <div class="main-promo">
+                    <div class="main__title">Peones</div>
+                    <div class="main__subtitle">Частная&nbspколлекция&nbspпионов <br> из&nbspСергиева&nbspПосада</div>
+                    <button class="button">СМОТРЕТЬ КАТАЛОГ</button>
+                    <img src="img/bg/flower_bg.png" alt="peace of flower" class="main__flower">
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="form" id="contacts">
-        <div class="container-form">
-            <div class="form__contacts">
-                <div class="form__contacts-wrapper">
-                    <div class="form__title">Наши контакты:</div>
-                    <div class="form__subtitle form__subtitle__pt42">E-mail:</div>
-                    <a href="mailto:peones@peones.ru" class="form__info">peones@peones.ru</a>
-                    <div class="form__subtitle">Номер телефона:</div>
+        </section>
+    
+        <!-- <section class="catalog">
+      
+        </section> -->
+    
+        <!-- <section class="tabs" id="delivery-payment">
+            <div class="container">
+                <ul class="tabs__list">
+                    <li class="tabs__item"><button class="tabs__btn tabs__btn_active" data-tabs-path="delivery">Доставка</button></li>
+                    <li class="tabs__item"><button class="tabs__btn" data-tabs-path="payment">Оплата</button></li>
+                  </ul>
+    
+                  <div class="tabs__content tabs__content_active" data-tabs-target="delivery">
+                    <div class="tabs-item">
+                        <div class="tabs-item__wrapper">
+                            <img src="icons/shopping-bag.svg" alt="shopping bag" class="tabs-item__img">
+                            <div class="tabs-item__wrapper-descr">
+                                <div class="tabs-item__title">Доставка курьерской службой CDEK</div>
+                                <div class="tabs-item__text">
+                                    <p class="tabs-item__p">Доставка "до двери" недорогой и быстрой службой доставки CDEK</p>
+                                    <p class="tabs-item__p">Доставка производится в более чем 19000 городов и населенных пунктов России</p>
+                                </div>
+                            </div>
+                            <div class="tabs-item__price">от 300 ₽</div>
+                        </div>
+                    </div>
+                    <div class="tabs-item">
+                        <div class="tabs-item__wrapper">
+                            <img src="icons/box.svg" alt="box" class="tabs-item__img">
+                            <div class="tabs-item__wrapper-descr">
+                                <div class="tabs-item__title">Доставка Почтой России</div>
+                                <div class="tabs-item__text">
+                                    <p class="tabs-item__p">Доставка заказа в ближайшее почтовое отделение</p>
+                                    <p class="tabs-item__p">Заказы доставляются бандеролью или посылкой без объявленной ценности</p>
+                                    <p class="tabs-item__p">Вы можете посмотреть контрольные сроки пересылки посылок, нормативы их обработки и перевозки</p>
+                                    <p class="tabs-item__p">Стоимость доставки рассчитывается автоматически при оформлении заказа (наш магазин использует технологию <a href="//postcalc.ru">//postcalc.ru</a>)</p>
+                                    <p class="tabs-item__p">Номера посылок высылаются на электронную почту на следующий рабочий день после отправки</p>
+                                </div>
+                            </div>
+                            <div class="tabs-item__price">от 250 ₽</div>
+                        </div>
+                    </div>
+                    <div class="tabs-item">
+                        <div class="tabs-item__wrapper">
+                            <img src="icons/map.svg" alt="map" class="tabs-item__img">
+                            <div class="tabs-item__wrapper-descr">
+                                <div class="tabs-item__title">Самовывоз</div>
+                                <div class="tabs-item__text">
+                                    <p class="tabs-item__p">Удобный, бесплатный и быстрый способ получения заказа по адресу: Московская обл., г. Сергиев Посад, ул. Академика Силина, д. 1/22</p>
+                                </div>
+                            </div>
+                            <div class="tabs-item__price">бесплатно</div>
+                        </div>
+                    </div>
+                    <div class="tabs-item">
+                        <div class="tabs-item__wrapper">
+                            <img src="icons/car.svg" alt="car" class="tabs-item__img">
+                            <div class="tabs-item__wrapper-descr">
+                                <div class="tabs-item__title">Доставка до Московского терминала транспортной компании</div>
+                                <div class="tabs-item__text">
+                                    <p class="tabs-item__p">Доставка до Московского терминала транспортной компании: Деловые Линии, ЖелДорЭкспедиция, ПЭК или Энергия</p>
+                                    <p class="tabs-item__p">Отправка производится самым дешевым способом, без оценки</p>
+                                    <p class="tabs-item__p">Если Вам нужны эти или другие опции - обязательно указывайте их в комментарии к заказу</p>
+                                    <p class="tabs-item__p">При оформлении заказа указывайте паспортные данные!</p>
+                                </div>
+                            </div>
+                            <div class="tabs-item__price">бесплатно</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="tabs__content" data-tabs-target="payment">
+                        <div class="tabs-item">
+                            <div class="tabs-item__wrapper">
+                                <img src="icons/payment.svg" alt="payment" class="tabs-item__img">
+                                <div class="tabs-item__wrapper-descr">
+                                    <div class="tabs-item__title">Перевод на банковскую карту</div>
+                                    <div class="tabs-item__text tabs-item__text_second">
+                                        <p class="tabs-item__p">После подтверждения и оформления заказа Вам будет выставлен счет и выслан номер карты для осуществления перевода </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-item">
+                            <div class="tabs-item__wrapper">
+                                <img src="icons/cash.svg" alt="cash" class="tabs-item__img">
+                                <div class="tabs-item__wrapper-descr">
+                                    <div class="tabs-item__title">Оплата наличными курьеру </div>
+                                    <div class="tabs-item__text tabs-item__text_second">
+                                        <p class="tabs-item__p">Заказанные товары оплачиваются наличными только при получении заказа в г. Сергиев Посад</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-item">
+                            <div class="tabs-item__wrapper">
+                                <img src="icons/invoice.svg" alt="invoice" class="tabs-item__img">
+                                <div class="tabs-item__wrapper-descr">
+                                    <div class="tabs-item__title">Оплата по счёту в электронном письме</div>
+                                    <div class="tabs-item__text tabs-item__text_second">
+                                        <p class="tabs-item__p">После подтверждения и оформления заказа Вам будет выставлен счет с возможностью оплаты прямо из письма через систему Яндекс.Деньги</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-item">
+                            <div class="tabs-item__wrapper">
+                                <img src="icons/credit-card.svg" alt="credit-card" class="tabs-item__img">
+                                <div class="tabs-item__wrapper-descr">
+                                    <div class="tabs-item__title">Оплата в пунктах выдачи CDEK</div>
+                                    <div class="tabs-item__text tabs-item__text_second">
+                                        <p class="tabs-item__p">В пунктах выдачи Москвы и Московской области можно оплатить заказ</p>
+                                        <p class="tabs-item__p">При получении наличными либо картой, при доставке в другие регионы требуется предварительная оплата заказа, оплата при получении невозможна</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                  </div>
+            </div>
+        </section> -->  
+    
+        <!-- <section class="gallery" id="photogallery">
+            <div class="container">
+                <div class="title">Фотогалерея</div>
+                <div class="gallery__wrapper">
+                    <a href="/img/gallery/girl_1_big.jpg" data-fancybox="gallery">
+                        <img src = "img/gallery/girl_1.jpg" alt ="picture 1" class="gallery__img gallery__img_without-padding">
+                    </a>
+                    <a href="/img/gallery/fl_1_big.jpg" data-fancybox="gallery">
+                        <img src = "img/gallery/fl_1.jpg" alt ="picture 2" class="gallery__img">
+                    </a>
+                    <a href="/img/gallery/fl_2.jpg" data-fancybox="gallery">
+                        <img src = "img/gallery/fl_2.jpg" alt ="picture 3" class="gallery__img">
+                    </a>
+                    <a href="/img/gallery/fl_3_big.jpg" data-fancybox="gallery">
+                        <img src = "img/gallery/fl_3.jpg" alt ="picture 4" class="gallery__img">
+                    </a>
+                    <a href="/img/gallery/fl_4_big.jpg" data-fancybox="gallery">
+                        <img src = "img/gallery/fl_4.jpg" alt ="picture 5" class="gallery__img">
+                    </a>
+                    <a href="/img/gallery/fl_5_big.jpg" data-fancybox="gallery">
+                        <img src = "img/gallery/fl_5.jpg" alt ="picture 6" class="gallery__img gallery__img_without-padding">
+                    </a>
+                    <a href="/img/gallery/girl_2_big.jpg" data-fancybox="gallery">
+                        <img src = "img/gallery/girl_2.jpg" alt ="picture 7" class="gallery__img">
+                    </a>
+                    <a href="/img/gallery/girl_3_big.jpg" data-fancybox="gallery">
+                        <img src = "img/gallery/girl_3.jpg" alt ="picture 8" class="gallery__img gallery__img_without-padding">
+                    </a>
+                </div>
+            </div>
+        </section> -->
+    
+        <!-- <section class="about" id="about">
+            <div class="container">
+                <div class="title">О нас</div>
+                <div class="about__wrapper">
+                    <img src="img/about/about_img.jpg" alt="about" class="about__img">
+                    <div class="about__text">
+                        <p class="about__p nopadding">Друзья, приветствую Вас на&nbspсвоем сайте!</p>
+                        <p class="about__p">Если Вы читаете эти строки, то, возможно, Вы садовый фанат и&nbspищете что-нибудь интересное для своей новой или старой цветочной клумбы…Ну а если Вы еще и&nbspлюбитель пионов, то нам будет легко с Вами найти общий язык.</p>
+                        <p class="about__p">Давайте знакомиться! <br>
+                            Я, Христина Несмеянова, приветствую Вас на своем сайте Peones.ru, который&nbspполучил свое названия от слияния двух слов «Peony» и «Nesmeyanova» в&nbspодно “Peones”. Как Вы понимаете, пионы – это мое увлечение, и эта страница его&nbspлогическое продолжение.</p>
+                        <p class="about__p">По образованию я микробиолог, после окончания университета в начале трудовой деятельности работала в Москве в НИИ Молекулярной Генетики, затем на фармпроизводстве.</p>
+                        <p class="about__p">После рождения третьей дочери и переезда в новый дом в Сергиевом Посаде передала руководство микробиологической лабораторией и, сменив лабораторные перчатки на садовые, начала новый этап жизни, где обустройство своего сада и создание цветочной коллекции в нем стало не менее интересным занятием, чем валидация микробиологических методов анализа. Я и мои три&nbspдочки-помощницы обожаем пионы и выращиваем их у себя в саду для того, чтобы каждый год в начале лета проводить целый месяц в состоянии переполненного душевного подъема от созерцания невероятной красоты пионового поля в нашем саду. Это ежегодное гарантированное счастье по плану! И в любую погоду! Не говоря уже о том, что послевкусие останется еще&nbspи&nbspна&nbspдолгие зимние месяцы, на время составления свежего каталога коллекции с описанием новых сортов.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    
+        <!-- <section class="form" id="contacts">
+            <div class="container-form">
+                <div class="form__contacts">
+                    <div class="form__contacts-wrapper">
+                        <div class="form__title">Наши контакты:</div>
+                        <div class="form__subtitle form__subtitle__pt42">E-mail:</div>
+                        <a href="mailto:peones@peones.ru" class="form__info">peones@peones.ru</a>
+                        <div class="form__subtitle">Номер телефона:</div>
+                        <a href="tel:+79036111388" class="form__info">+7 (903) 611 - 13 - 88</a>
+                        <div class="form__subtitle">Адрес компании:</div>
+                        <address class="form__info form__info__pt0">
+                            <div class="form__adress">Россия, Московская область,</div>
+                            <div class="form__adress">город Сергиев Посад,</div>
+                            <div class="form__adress">ул. Академика Силина, д. 1/22</div>
+                            </address>
+                        <div class="form__icons-wrapper">
+                            <div class="form__icon-border">
+                                <a href="" class="form__link"><img src="icons/vk_icon.svg" alt="vk" class="form__icon"></a>
+                            </div>
+                            <div class="form__icon-border">
+                                <a href="" class="form__link"><img src="icons/telegram_icon.svg" alt="telegram" class="form__icon"></a>
+                            </div>
+                            <div class="form__icon-border">
+                                <a href="" class="form__link"><img src="icons/facebook_icon.svg" alt="facebook" class="form__icon"></a>
+                            </div>
+                            <div class="form__icon-border">
+                                <a href="" class="form__link"><img src="icons/instagram_icon.svg" alt="instagram" class="form__icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form action="mailer/smart.php" method="post" name="main" id="mainform" class="form-main">
+                    <div class="form__title form__title__black">Оставьте заявку на обратный звонок:</div>
+                    <div class="form-column">
+                        <div class="form-main__item">
+                            <label for="input_1" class="form__subtitle form__subtitle__grey">Имя:</label>
+                            <input tabindex="1" value="" id="input_1" type="text" name="name" class="form-main__input" placeholder="Введите Ваше имя" autocomplete="off" onfocus="if (this.placeholder == 'Введите Ваше имя') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше имя';}">
+                        </div>
+                        <div class="form-main__item">
+                            <label for="input_2" class="form__subtitle form__subtitle__grey">Номер телефона:</label>
+                            <input tabindex="2" value="" id="input_2" type="tel" name="tel" class="form-main__input" placeholder="+7 (903) - 28|" autocomplete="off" onfocus="if (this.placeholder == '+7 (903) - 28|') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = '+7 (903) - 28|';}">
+                        </div>
+                        <div class="form-main__item">
+                            <label for="input_3" class="form__subtitle form__subtitle__grey">E-mail:</label>
+                            <input tabindex="3" value="" id="input_3" type="email" name="email" class="form-main__input" placeholder="example@mail.ru" autocomplete="off" onfocus="if (this.placeholder == 'example@mail.ru') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'example@mail.ru';}">
+                        </div>
+                    </div>
+    
+                    <div class="form-column form-column__second">
+                        <label for="input_4" class="form__subtitle form__subtitle__grey">Сообщение:</label>
+                        <textarea tabindex="4" id="input_4" type="text" name="message" class="form-main__textarea" placeholder="Введите Ваше сообщение" autocomplete="off" onfocus="if (this.placeholder == 'Введите Ваше сообщение') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше сообщение';}"></textarea>
+                        <button type="submit" class="button button__form">Оставить заявку</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </section> -->
+    
+        <!-- <footer class="footer">
+            <div class="container container__footer">
+                <div class="footer__block">
+                    <div class="main__title main__title__footer">Peones</div>
+                    <div class="main__subtitle main__subtitle__footer">частная коллекция пионов из Сергиева Посада</div>
                     <a href="tel:+79036111388" class="form__info">+7 (903) 611 - 13 - 88</a>
-                    <div class="form__subtitle">Адрес компании:</div>
-                    <address class="form__info form__info__pt0">
-                        <div class="form__adress">Россия, Московская область,</div>
-                        <div class="form__adress">город Сергиев Посад,</div>
-                        <div class="form__adress">ул. Академика Силина, д. 1/22</div>
-                        </address>
-                    <div class="form__icons-wrapper">
+                    <a href="mailto:peones@peones.ru" class="form__info">peones@peones.ru</a>
+                    <div class="footer__social">
                         <div class="form__icon-border">
                             <a href="" class="form__link"><img src="icons/vk_icon.svg" alt="vk" class="form__icon"></a>
                         </div>
@@ -238,103 +335,52 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <form action="mailer/smart.php" method="post" name="main" id="mainform" class="form-main">
-                <div class="form__title form__title__black">Оставьте заявку на обратный звонок:</div>
-                <div class="form-column">
-                    <div class="form-main__item">
-                        <label for="input_1" class="form__subtitle form__subtitle__grey">Имя:</label>
-                        <input tabindex="1" value="" id="input_1" type="text" name="name" class="form-main__input" placeholder="Введите Ваше имя" autocomplete="off" onfocus="if (this.placeholder == 'Введите Ваше имя') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше имя';}">
-                    </div>
-                    <div class="form-main__item">
-                        <label for="input_2" class="form__subtitle form__subtitle__grey">Номер телефона:</label>
-                        <input tabindex="2" value="" id="input_2" type="tel" name="tel" class="form-main__input" placeholder="+7 (903) - 28|" autocomplete="off" onfocus="if (this.placeholder == '+7 (903) - 28|') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = '+7 (903) - 28|';}">
-                    </div>
-                    <div class="form-main__item">
-                        <label for="input_3" class="form__subtitle form__subtitle__grey">E-mail:</label>
-                        <input tabindex="3" value="" id="input_3" type="email" name="email" class="form-main__input" placeholder="example@mail.ru" autocomplete="off" onfocus="if (this.placeholder == 'example@mail.ru') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'example@mail.ru';}">
-                    </div>
-                </div>
-
-                <div class="form-column form-column__second">
-                    <label for="input_4" class="form__subtitle form__subtitle__grey">Сообщение:</label>
-                    <textarea tabindex="4" id="input_4" type="text" name="message" class="form-main__textarea" placeholder="Введите Ваше сообщение" autocomplete="off" onfocus="if (this.placeholder == 'Введите Ваше сообщение') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше сообщение';}"></textarea>
-                    <button type="submit" class="button button__form">Оставить заявку</button>
-                </div>
-                
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container container__footer">
-            <div class="footer__block">
-                <div class="main__title main__title__footer">Peones</div>
-                <div class="main__subtitle main__subtitle__footer">частная коллекция пионов из Сергиева Посада</div>
-                <a href="tel:+79036111388" class="form__info">+7 (903) 611 - 13 - 88</a>
-                <a href="mailto:peones@peones.ru" class="form__info">peones@peones.ru</a>
-                <div class="footer__social">
-                    <div class="form__icon-border">
-                        <a href="" class="form__link"><img src="icons/vk_icon.svg" alt="vk" class="form__icon"></a>
-                    </div>
-                    <div class="form__icon-border">
-                        <a href="" class="form__link"><img src="icons/telegram_icon.svg" alt="telegram" class="form__icon"></a>
-                    </div>
-                    <div class="form__icon-border">
-                        <a href="" class="form__link"><img src="icons/facebook_icon.svg" alt="facebook" class="form__icon"></a>
-                    </div>
-                    <div class="form__icon-border">
-                        <a href="" class="form__link"><img src="icons/instagram_icon.svg" alt="instagram" class="form__icon"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer__block">
-                <div class="footer__nav-title">Меню навигации:</div>
-                <ul class="footer__ul">
-                    <li class="footer__links"><a href="#mainpage" class="footer__link">Главная</a></li>
-                    <li class="footer__links"><a href="#catalog" class="footer__link">Каталог</a></li>
-                    <li class="footer__links"><a href="#delivery-payment" class="footer__link">Доставка и оплата</a></li>
-                    <li class="footer__links"><a href="#photogallery" class="footer__link">Фотогалерея</a></li>
-                    <li class="footer__links"><a href="#about" class="footer__link">О нас</a></li>
-                    <li class="footer__links"><a href="#contacts" class="footer__link">Контакты</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__block">
-                <div class="footer__nav-title">Instagram</div>
-                <div class="footer__ig-wrapper">
-                    <a href="" class="footer__img"><img src="img/footer/ig1.jpg" alt="1"></a>
-                    <a href="" class="footer__img"><img src="img/footer/ig2.jpg" alt="2"></a>
-                    <a href="" class="footer__img"><img src="img/footer/ig3.jpg" alt="3"></a>
-                    <a href="" class="footer__img"><img src="img/footer/ig4.jpg" alt="4"></a>
-                    <a href="" class="footer__img"><img src="img/footer/ig5.jpg" alt="5"></a>
-                    <a href="" class="footer__img"><img src="img/footer/ig6.jpg" alt="6"></a>    
-                </div>
-            </div>
-            <div class="footer__block">
-                <form action="mailer/smart.php" method="post" id="footer-form">
-                    <div class="footer__nav-title mb20px">Подписаться на новости</div>
-                    <input type="text" name="name" class="footer__input footer-name" placeholder="Имя" onfocus="if (this.placeholder == 'Имя') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Имя'; this.style.color = '#FFFFFF'}">
-                    <input type="email" name="email" class="footer__input footer-email" placeholder="E-mail" onfocus="if (this.placeholder == 'E-mail') {this.placeholder = ''; this.style.color = '#FFFFFF'}" onblur="if (this.placeholder == '') {this.placeholder = 'E-mail'; this.style.color = '#FFFFFF'}">
-                    <input type="submit" class="button__footer">Подписаться</input>
-                </form>
-            </div>
-        </div>
-        <div class="footer__line"></div>
-
-    </footer>
-
-    <a href="#mainpage" class="pageup">
-        <img src="icons/circle-chevron-up-solid.svg" alt="pageup-arrow">
-    </a>
     
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+                <div class="footer__block">
+                    <div class="footer__nav-title">Меню навигации:</div>
+                    <ul class="footer__ul">
+                        <li class="footer__links"><a href="#mainpage" class="footer__link">Главная</a></li>
+                        <li class="footer__links"><a href="#catalog" class="footer__link">Каталог</a></li>
+                        <li class="footer__links"><a href="#delivery-payment" class="footer__link">Доставка и оплата</a></li>
+                        <li class="footer__links"><a href="#photogallery" class="footer__link">Фотогалерея</a></li>
+                        <li class="footer__links"><a href="#about" class="footer__link">О нас</a></li>
+                        <li class="footer__links"><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer__block">
+                    <div class="footer__nav-title">Instagram</div>
+                    <div class="footer__ig-wrapper">
+                        <a href="" class="footer__img"><img src="img/footer/ig1.jpg" alt="1"></a>
+                        <a href="" class="footer__img"><img src="img/footer/ig2.jpg" alt="2"></a>
+                        <a href="" class="footer__img"><img src="img/footer/ig3.jpg" alt="3"></a>
+                        <a href="" class="footer__img"><img src="img/footer/ig4.jpg" alt="4"></a>
+                        <a href="" class="footer__img"><img src="img/footer/ig5.jpg" alt="5"></a>
+                        <a href="" class="footer__img"><img src="img/footer/ig6.jpg" alt="6"></a>    
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <form action="mailer/smart.php" method="post" id="footer-form">
+                        <div class="footer__nav-title mb20px">Подписаться на новости</div>
+                        <input type="text" name="name" class="footer__input footer-name" placeholder="Имя" onfocus="if (this.placeholder == 'Имя') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Имя'; this.style.color = '#FFFFFF'}">
+                        <input type="email" name="email" class="footer__input footer-email" placeholder="E-mail" onfocus="if (this.placeholder == 'E-mail') {this.placeholder = ''; this.style.color = '#FFFFFF'}" onblur="if (this.placeholder == '') {this.placeholder = 'E-mail'; this.style.color = '#FFFFFF'}">
+                        <input type="submit" class="button__footer">Подписаться</input>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+    
+        </footer> -->
+    
+        <!-- <a href="#mainpage" class="pageup">
+            <img src="icons/circle-chevron-up-solid.svg" alt="pageup-arrow">
+        </a> -->
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script> -->
+    <!-- <script src="js/script.js"></script> -->
 </body>
 </html>

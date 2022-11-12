@@ -1,19 +1,35 @@
 *
+	padding: 0
+	margin: 0
+	border: 0
 	box-sizing: border-box
+html, body 
+	height: 100%
+	font-size: 15px
+	font-family: 'Montserrat'
+
+
+.wrapper
+	min-height: 100%
+
+.container
+	width: 100%
+	margin: 0 auto
 
 .container-navbar
-	margin: 0 0 0 -24px
+	margin: 0 0 0 -1.6rem
 	display: flex
 	justify-content: space-between
 	align-items: center
-	width: 1164px
+	//width: 100%
 
 .container
-	margin: 88px auto 80px
-	padding: 0
+	margin: 0 auto
+	padding: 5.866667rem 2.6667rem 5.3333rem 2.6667rem
 	max-width: 1142px
+	//max-width: 59.4791667%
 	&__footer
-		margin: 0 auto 23px auto
+		margin: 0 auto 1.5333rem auto
 		display: flex
 
 .container-form
@@ -34,3 +50,4 @@
 @import 'blocks/form'
 @import 'blocks/footer'
 @import 'blocks/pageup'
+@import 'base/media'
