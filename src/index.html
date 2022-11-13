@@ -59,23 +59,27 @@
                                <li class="main-parts__li"><a href="#about" class="main-parts__item">О нас</a></li>
                                <li class="main-parts__li"><a href="#contacts" class="main-parts__item">Контакты</a></li>
                             </ul>
-                            <div class="main__burger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                        </div>
+                        <div class="main__burger">
+                            <div class="main__burger-wrapper">
+                                <span class="main__burger__item"></span>
+                                <span class="main__burger__item"></span>
+                                <span class="main__burger__item"></span>
                             </div>
                         </div>
                     </nav>
-                    <div class="main-search">
-                        <textarea name="nameTextarea" id="" cols="11" rows="1" class="main-search__textarea" placeholder="Поиск" onfocus="if (this.placeholder == 'Поиск') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Поиск';}"></textarea>
-                        <a href=""><img src="icons/search_main.svg" alt="search" class="main-search__item"></a>
-                        <a href=""><img src="icons/bag_main.svg" alt="bag" class="main-search__item"></a>
-                        <a href=""><img src="icons/user_main.svg" alt="user" class="main-search__item"></a>
+                    <div class="oneLine-mobile">
+                        <div class="main-contacts">
+                            <a href="tel:+79036111388" class="main-contacts__item">+7 (903) 611 - 13 - 88</a>
+                            <a href="mailto:peones@peones.ru" class="main-contacts__item">peones@peones.ru</a>
+                        </div>
+                        <div class="main-search">
+                            <textarea name="nameTextarea" id="" cols="11" rows="1" class="main-search__textarea" placeholder="Поиск" onfocus="if (this.placeholder == 'Поиск') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Поиск';}"></textarea>
+                            <a href=""><img src="icons/search_main.svg" alt="search" class="main-search__item"></a>
+                            <a href=""><img src="icons/bag_main.svg" alt="bag" class="main-search__item"></a>
+                            <a href=""><img src="icons/user_main.svg" alt="user" class="main-search__item"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="main-contacts">
-                    <a href="tel:+79036111388" class="main-contacts__tel">+7 (903) 611 - 13 - 88</a>
-                    <a href="mailto:peones@peones.ru" class="main-contacts__mail">peones@peones.ru</a>
                 </div>
                 <div class="main-promo">
                     <div class="main__title">Peones</div>
@@ -86,11 +90,11 @@
             </div>
         </section>
     
-        <!-- <section class="catalog">
+        <section class="catalog">
       
-        </section> -->
+        </section>
     
-        <!-- <section class="tabs" id="delivery-payment">
+        <section class="tabs" id="delivery-payment">
             <div class="container">
                 <ul class="tabs__list">
                     <li class="tabs__item"><button class="tabs__btn tabs__btn_active" data-tabs-path="delivery">Доставка</button></li>
@@ -204,7 +208,7 @@
                         </div>
                   </div>
             </div>
-        </section> -->  
+        </section> 
     
         <!-- <section class="gallery" id="photogallery">
             <div class="container">
@@ -381,6 +385,6 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script> -->
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
 </body>
 </html>

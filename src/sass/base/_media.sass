@@ -47,24 +47,91 @@
 //-------------------------------------------------------------------------------------------------------------
 
 @media (max-width: 791px)
+	.oneLine-mobile
+		display: flex
+		width: 100%
+		justify-content: space-between
+	.main
+		height: 829px
+		background: url(../img/bg/main_bg.jpg) 16% 0%/cover no-repeat
+	.main-search
+		width: 44%
+		margin: 2.5rem 1.4rem 0 0
+		&__textarea
+			font-size: 1.6rem
+		&__item
+			width: 32px
 	.main-parts
+		padding: 5.9rem 1.4rem 2rem 1.4rem
 		position: fixed
+		top: -100% //чтобы меню находилось над страницей
+		right: 0
+		width: 100%
+		height: 80vh //высота на 80% видимого простраинства
+		flex-direction: column
+		align-items: center
+		background-color: rgba(218, 115, 144, 0.9)
+		z-index: 51
+		transition: 0.6s all
+		&_active
+			top: 0
+		&__item
+			font-size: 1.6rem
+			&:hover
+				color: $white_color
+				border: none
+			
 	.main__burger
+		display: block
 		position: fixed
 		width: 100%
 		height: 60px
 		top: 0
 		left: 0
-		z-index: 50
-	.main__burger:before
-		content: ''
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
+		z-index: 52
 		background-color: #303030
+		&-wrapper
+			position: absolute
+			right: 1rem
+			top: 50%
+			transform: translateY(-50%)
+			width: 2.5rem
+			//height: 1.6rem
+		&__item
+			display: block
+			margin-bottom: 0.4rem
+			height: 0.2rem
+			width: 100%
+			background-color: $white_color
+			transition: 0.6s all
+		&_active
+			.main__burger__item
+				margin-bottom: -0.2rem //убираем смещение, установленное ранее
+				&:first-child
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:last-child
+					transform: translateY(3px) rotate(45deg)
+					
+
+	.main-search__textarea
+		height: 50%
 	.main__title 
-		font-size: 4.5rem
+		padding-top: 11rem
+		font-size: 5.5rem
+	.main-contacts
+		display: flex
+		flex-direction: column
+		margin: 2.5rem 1.4rem 0 0
+		&__item
+			padding-bottom: 0.6rem
+			font-weight: 500
+			font-size: 20px
+			text-align: left
+			letter-spacing: -0.03em
+			color: $white_color
+			text-decoration: none
+
 
 @media (max-width: 575px)
