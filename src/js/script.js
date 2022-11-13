@@ -12,12 +12,29 @@ document.addEventListener('DOMContentLoaded', () => {
 					tabsHandler(tabsPath);
 				}
 			});
-		}
+		};
 	
 		const tabsHandler = (path) => {
 			tabsContent.forEach(el => {el.classList.remove('tabs__content_active')});
 			document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content_active');
 		};
+	});
+
+	//гамбургер
+	const menu = document.querySelector('.main-parts');
+    const menuItem = document.querySelectorAll('.main-parts__item');
+    const hamburger = document.querySelector('.main__burger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('main__burger_active');
+        menu.classList.toggle('main-parts_active');
+    });
+	//при клике на любую из ссылок гамбургер скроется
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('main__burger_active');
+            menu.classList.toggle('main-parts_active');
+        });
 	});
 
 //плавный скролл
