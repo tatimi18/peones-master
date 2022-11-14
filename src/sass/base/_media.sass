@@ -32,31 +32,38 @@
 	.main
 		height: 860px
 		background: url(../img/bg/main_bg.jpg) 10% 0%/cover no-repeat
+		&__subtitle
+			text-align: center
+			font-size: 1.6rem
+	.container-navbar
+		margin: 0 -1.6rem 0 -1.6rem
 	.main-promo
 		display: flex
 		flex-direction: column
 		align-items: center
 	.main-parts__item
 		font-size: 0.93rem
-	.main-search__textarea
-		font-size: 1rem
-	.main__subtitle
-		text-align: center
-		font-size: 1.6rem
+	.main-search
+		margin: 2.1rem 0 0 0
+		&__textarea
+			font-size: 1rem
 
 //-------------------------------------------------------------------------------------------------------------
 
 @media (max-width: 791px)
+	.container
+		padding: 2.5rem 1rem
 	.oneLine-mobile
+		margin-top: 3rem
 		display: flex
 		width: 100%
 		justify-content: space-between
 	.main
-		height: 829px
+		height: 1020px
 		background: url(../img/bg/main_bg.jpg) 16% 0%/cover no-repeat
 	.main-search
-		width: 44%
-		margin: 2.5rem 1.4rem 0 0
+		margin: 0
+		width: 40%
 		&__textarea
 			font-size: 1.6rem
 		&__item
@@ -118,20 +125,45 @@
 	.main-search__textarea
 		height: 50%
 	.main__title 
-		padding-top: 11rem
+		padding-top: 7rem
 		font-size: 5.5rem
 	.main-contacts
 		display: flex
-		flex-direction: column
-		margin: 2.5rem 1.4rem 0 0
+
+
+@media (max-width: 512px)
+	.container
+		padding: 2.5rem 1rem
+	.main
+		height: 970px
+		background: url(../img/bg/main_bg.jpg) 26% 0%/cover no-repeat
+	.main-search
+		width: 30%
+	.main-search__textarea
+		display: none
+
+@media (max-width: 400px)
+	.main
+		height: 700px
+		background: url(../img/bg/main_bg.jpg) 31% 32% no-repeat
+	.main-parts
+		height: 85vh
+	.main-parts__item
+		font-size: 1.2rem
+	.oneLine-mobile
+		margin-top: 3rem
+	.main-search
 		&__item
-			padding-bottom: 0.6rem
-			font-weight: 500
-			font-size: 20px
-			text-align: left
-			letter-spacing: -0.03em
-			color: $white_color
-			text-decoration: none
-
-
-@media (max-width: 575px)
+			width: 23px
+	.main-contacts
+		&__item
+			font-size: 1rem
+	.main__title
+		padding-top: 5rem
+		font-size: 4.5rem
+	.main__subtitle
+		font-size: 1.2rem
+	.button
+		font-size: 1rem
+		width: 84%
+		padding: 1.5rem 1.4rem

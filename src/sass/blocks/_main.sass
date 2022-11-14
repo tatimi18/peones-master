@@ -1,5 +1,5 @@
 .main
-    min-height: 1080px
+    height: 1080px
     max-width: 100%
     background: url(../img/bg/main_bg.jpg) center (center/cover) no-repeat
     &__flower
@@ -7,6 +7,7 @@
         position: absolute
         left: 556px
         top: 604px
+    
 
 .oneLine
     display: flex
@@ -35,7 +36,7 @@
     margin-left: 0.667rem
     display: flex
     justify-content: space-between
-    width: 21%
+    width: 230px
     &__textarea
         //padding: 0.26667rem
         background-color: rgba(0, 0, 0, 0)
@@ -48,6 +49,15 @@
 
 .main-contacts
     display: none
+    flex-direction: column
+    &__item
+        padding-bottom: 0.6rem
+        font-weight: 500
+        font-size: 1.3rem
+        text-align: left
+        letter-spacing: -0.03em
+        color: $white_color
+        text-decoration: none
 
 textarea::placeholder
     color: $white_color
