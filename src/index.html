@@ -12,40 +12,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- <section class="main" id="mainpage">
-            <div class="container">
-                <div class="main__burger">
-                    <span></span>
-                </div>
-                <nav>
-                    <div class="container-navbar">
-                        <div class="main-parts">
+                        <!-- <div class="main-parts">
                             <a href="#mainpage" class="main-parts__item">Главная</a>
                             <a href="#catalog" class="main-parts__item">Каталог</a>
                             <a href="#delivery-payment" class="main-parts__item">Доставка и оплата</a>
                             <a href="#photogallery" class="main-parts__item">Фотогалерея</a>
                             <a href="#about" class="main-parts__item">О нас</a>
                             <a href="#contacts" class="main-parts__item">Контакты</a>
-                        </div>
-                        <div class="main-search">
-                            <textarea name="nameTextarea" id="" cols="11" rows="1" class="main-search__textarea" placeholder="Поиск" onfocus="if (this.placeholder == 'Поиск') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Поиск';}"></textarea>
-                            <a href=""><img src="icons/search_main.svg" alt="search" class="main-search__item"></a>
-                            <a href=""><img src="icons/bag_main.svg" alt="bag" class="main-search__item"></a>
-                            <a href=""><img src="icons/user_main.svg" alt="user" class="main-search__item"></a>
-                        </div>
-                        <div class="main-contacts">
-                            <a href="tel:+79036111388" class="main-contacts__tel">+7 (903) 611 - 13 - 88</a>
-                            <a href="mailto:peones@peones.ru" class="main-contacts__mail">mailto:peones@peones.ru</a>
-                        </div>
-                    </div>
-                    
-                </nav>
-                <div class="main__title">Peones</div>
-                <div class="main__subtitle">Частная&nbspколлекция&nbspпионов <br> из&nbspСергиева&nbspПосада</div>
-                <button class="button">СМОТРЕТЬ КАТАЛОГ</button>
-                <img src="img/bg/flower_bg.png" alt="peace of flower" class="main__flower">
-            </div>
-        </section> -->
+                        </div> -->
+                        
         <section class="main" id="mainpage">
             <div class="container">
                 <div class="oneLine">
@@ -99,14 +74,15 @@
                 <ul class="tabs__list">
                     <li class="tabs__item"><button class="tabs__btn tabs__btn_active" data-tabs-path="delivery">Доставка</button></li>
                     <li class="tabs__item"><button class="tabs__btn" data-tabs-path="payment">Оплата</button></li>
-                  </ul>
+                </ul>
     
-                  <div class="tabs__content tabs__content_active" data-tabs-target="delivery">
+                <div class="tabs__content tabs__content_active" data-tabs-target="delivery">
                     <div class="tabs-item">
                         <div class="tabs-item__wrapper">
                             <img src="icons/shopping-bag.svg" alt="shopping bag" class="tabs-item__img">
                             <div class="tabs-item__wrapper-descr">
                                 <div class="tabs-item__title">Доставка курьерской службой CDEK</div>
+                                <div class="tabs-item__price-mobile">от 300 ₽</div>
                                 <div class="tabs-item__text">
                                     <p class="tabs-item__p">Доставка "до двери" недорогой и быстрой службой доставки CDEK</p>
                                     <p class="tabs-item__p">Доставка производится в более чем 19000 городов и населенных пунктов России</p>
@@ -120,6 +96,7 @@
                             <img src="icons/box.svg" alt="box" class="tabs-item__img">
                             <div class="tabs-item__wrapper-descr">
                                 <div class="tabs-item__title">Доставка Почтой России</div>
+                                <div class="tabs-item__price-mobile">от 250 ₽</div>
                                 <div class="tabs-item__text">
                                     <p class="tabs-item__p">Доставка заказа в ближайшее почтовое отделение</p>
                                     <p class="tabs-item__p">Заказы доставляются бандеролью или посылкой без объявленной ценности</p>
@@ -136,6 +113,7 @@
                             <img src="icons/map.svg" alt="map" class="tabs-item__img">
                             <div class="tabs-item__wrapper-descr">
                                 <div class="tabs-item__title">Самовывоз</div>
+                                <div class="tabs-item__price-mobile">бесплатно</div>
                                 <div class="tabs-item__text">
                                     <p class="tabs-item__p">Удобный, бесплатный и быстрый способ получения заказа по адресу: Московская обл., г. Сергиев Посад, ул. Академика Силина, д. 1/22</p>
                                 </div>
@@ -148,6 +126,7 @@
                             <img src="icons/car.svg" alt="car" class="tabs-item__img">
                             <div class="tabs-item__wrapper-descr">
                                 <div class="tabs-item__title">Доставка до Московского терминала транспортной компании</div>
+                                <div class="tabs-item__price-mobile">бесплатно</div>
                                 <div class="tabs-item__text">
                                     <p class="tabs-item__p">Доставка до Московского терминала транспортной компании: Деловые Линии, ЖелДорЭкспедиция, ПЭК или Энергия</p>
                                     <p class="tabs-item__p">Отправка производится самым дешевым способом, без оценки</p>
@@ -166,7 +145,7 @@
                                 <div class="tabs-item__wrapper-descr">
                                     <div class="tabs-item__title">Перевод на банковскую карту</div>
                                     <div class="tabs-item__text tabs-item__text_second">
-                                        <p class="tabs-item__p">После подтверждения и оформления заказа Вам будет выставлен счет и выслан номер карты для осуществления перевода </p>
+                                        <p class="tabs-item__p tabs-item__p-second">После подтверждения и оформления заказа Вам будет выставлен счет и выслан номер карты для осуществления перевода </p>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +156,7 @@
                                 <div class="tabs-item__wrapper-descr">
                                     <div class="tabs-item__title">Оплата наличными курьеру </div>
                                     <div class="tabs-item__text tabs-item__text_second">
-                                        <p class="tabs-item__p">Заказанные товары оплачиваются наличными только при получении заказа в г. Сергиев Посад</p>
+                                        <p class="tabs-item__p tabs-item__p-second">Заказанные товары оплачиваются наличными только при получении заказа в г. Сергиев Посад</p>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +167,7 @@
                                 <div class="tabs-item__wrapper-descr">
                                     <div class="tabs-item__title">Оплата по счёту в электронном письме</div>
                                     <div class="tabs-item__text tabs-item__text_second">
-                                        <p class="tabs-item__p">После подтверждения и оформления заказа Вам будет выставлен счет с возможностью оплаты прямо из письма через систему Яндекс.Деньги</p>
+                                        <p class="tabs-item__p tabs-item__p-second">После подтверждения и оформления заказа Вам будет выставлен счет с возможностью оплаты прямо из письма через систему Яндекс.Деньги</p>
                                     </div>
                                 </div>
                             </div>
@@ -199,8 +178,8 @@
                                 <div class="tabs-item__wrapper-descr">
                                     <div class="tabs-item__title">Оплата в пунктах выдачи CDEK</div>
                                     <div class="tabs-item__text tabs-item__text_second">
-                                        <p class="tabs-item__p">В пунктах выдачи Москвы и Московской области можно оплатить заказ</p>
-                                        <p class="tabs-item__p">При получении наличными либо картой, при доставке в другие регионы требуется предварительная оплата заказа, оплата при получении невозможна</p>
+                                        <p class="tabs-item__p tabs-item__p-second">В пунктах выдачи Москвы и Московской области можно оплатить заказ</p>
+                                        <p class="tabs-item__p tabs-item__p-second">При получении наличными либо картой, при доставке в другие регионы требуется предварительная оплата заказа, оплата при получении невозможна</p>
                                     </div>
                                 </div>
                             </div>
