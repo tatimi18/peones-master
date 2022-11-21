@@ -228,8 +228,9 @@
                 </div>
             </div>
         </section>
-    
-        <section class="about" id="about">
+
+        <div class="local-link" id="about"></div>
+        <section class="about">
             <div class="container">
                 <div class="title">О нас</div>
                 <div class="about__wrapper">
@@ -246,63 +247,70 @@
             </div>
         </section>
     
-        <!-- <section class="form" id="contacts">
+        <div class="local-link" id="contacts"></div>
+        <section class="form">
             <div class="container-form">
                 <div class="form__contacts">
-                    <div class="form__contacts-wrapper">
-                        <div class="form__title">Наши контакты:</div>
-                        <div class="form__subtitle form__subtitle__pt42">E-mail:</div>
-                        <a href="mailto:peones@peones.ru" class="form__info">peones@peones.ru</a>
-                        <div class="form__subtitle">Номер телефона:</div>
-                        <a href="tel:+79036111388" class="form__info">+7 (903) 611 - 13 - 88</a>
-                        <div class="form__subtitle">Адрес компании:</div>
-                        <address class="form__info form__info__pt0">
-                            <div class="form__adress">Россия, Московская область,</div>
-                            <div class="form__adress">город Сергиев Посад,</div>
-                            <div class="form__adress">ул. Академика Силина, д. 1/22</div>
-                            </address>
-                        <div class="form__icons-wrapper">
-                            <div class="form__icon-border">
-                                <a href="" class="form__link"><img src="icons/vk_icon.svg" alt="vk" class="form__icon"></a>
-                            </div>
-                            <div class="form__icon-border">
-                                <a href="" class="form__link"><img src="icons/telegram_icon.svg" alt="telegram" class="form__icon"></a>
-                            </div>
-                            <div class="form__icon-border">
-                                <a href="" class="form__link"><img src="icons/facebook_icon.svg" alt="facebook" class="form__icon"></a>
-                            </div>
-                            <div class="form__icon-border">
-                                <a href="" class="form__link"><img src="icons/instagram_icon.svg" alt="instagram" class="form__icon"></a>
+                    <div class="form__contacts-wrapper__changing-bg">
+                        <div class="form__contacts-wrapper">
+                            <div class="form__title">Наши контакты:</div>
+                            <div class="form__subtitle form__subtitle__pt42">E-mail:</div>
+                            <a href="mailto:peones@peones.ru" class="form__info">peones@peones.ru</a>
+                            <div class="form__subtitle">Номер телефона:</div>
+                            <a href="tel:+79036111388" class="form__info">+7 (903) 611 - 13 - 88</a>
+                            <div class="form__subtitle">Адрес компании:</div>
+                            <address class="form__info form__info__pt0">
+                                <div class="form__adress">Россия, Московская область,</div>
+                                <div class="form__adress">город Сергиев Посад,</div>
+                                <div class="form__adress">ул. Академика Силина, д. 1/22</div>
+                                </address>
+                            <div class="form__icons-wrapper">
+                                <div class="form__icon-border">
+                                    <a href="" class="form__link"><img src="icons/vk_icon.svg" alt="vk" class="form__icon"></a>
+                                </div>
+                                <div class="form__icon-border">
+                                    <a href="" class="form__link"><img src="icons/telegram_icon.svg" alt="telegram" class="form__icon"></a>
+                                </div>
+                                <div class="form__icon-border">
+                                    <a href="" class="form__link"><img src="icons/facebook_icon.svg" alt="facebook" class="form__icon"></a>
+                                </div>
+                                <div class="form__icon-border">
+                                    <a href="" class="form__link"><img src="icons/instagram_icon.svg" alt="instagram" class="form__icon"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <form action="mailer/smart.php" method="post" name="main" id="mainform" class="form-main">
                     <div class="form__title form__title__black">Оставьте заявку на обратный звонок:</div>
-                    <div class="form-column">
-                        <div class="form-main__item">
-                            <label for="input_1" class="form__subtitle form__subtitle__grey">Имя:</label>
-                            <input tabindex="1" value="" id="input_1" type="text" name="name" class="form-main__input" placeholder="Введите Ваше имя" autocomplete="off" onfocus="if (this.placeholder == 'Введите Ваше имя') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше имя';}">
+
+                    <div class="form-columns">
+                        <div class="form-column">
+
+                            <div class="form-main__item">
+                                <label for="input_1" class="form__subtitle form__subtitle__grey">Имя:</label>
+                                <input tabindex="1" value="" id="input_1" type="text" name="name" class="form-main__input" placeholder="Введите Ваше имя" autocomplete="off" onfocus="if (this.placeholder == 'Введите Ваше имя') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше имя';}">
+                            </div>
+                            <div class="form-main__item">
+                                <label for="input_2" class="form__subtitle form__subtitle__grey">Номер телефона:</label>
+                                <input tabindex="2" value="" id="input_2" type="tel" name="tel" class="form-main__input" placeholder="+7 (903) - 28|" autocomplete="off" onfocus="if (this.placeholder == '+7 (903) - 28|') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = '+7 (903) - 28|';}">
+                            </div>
+                            <div class="form-main__item">
+                                <label for="input_3" class="form__subtitle form__subtitle__grey">E-mail:</label>
+                                <input tabindex="3" value="" id="input_3" type="email" name="email" class="form-main__input" placeholder="example@mail.ru" autocomplete="off" onfocus="if (this.placeholder == 'example@mail.ru') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'example@mail.ru';}">
+                            </div>
                         </div>
-                        <div class="form-main__item">
-                            <label for="input_2" class="form__subtitle form__subtitle__grey">Номер телефона:</label>
-                            <input tabindex="2" value="" id="input_2" type="tel" name="tel" class="form-main__input" placeholder="+7 (903) - 28|" autocomplete="off" onfocus="if (this.placeholder == '+7 (903) - 28|') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = '+7 (903) - 28|';}">
-                        </div>
-                        <div class="form-main__item">
-                            <label for="input_3" class="form__subtitle form__subtitle__grey">E-mail:</label>
-                            <input tabindex="3" value="" id="input_3" type="email" name="email" class="form-main__input" placeholder="example@mail.ru" autocomplete="off" onfocus="if (this.placeholder == 'example@mail.ru') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'example@mail.ru';}">
+
+                        <div class="form-column form-column__second">
+                            <label for="input_4" class="form__subtitle form__subtitle__grey">Сообщение:</label>
+                            <textarea tabindex="4" id="input_4" type="text" name="message" class="form-main__textarea" placeholder="Введите Ваше сообщение" autocomplete="off" onfocus="if (this.placeholder == 'Введите Ваше сообщение') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше сообщение';}"></textarea>
+                            <button type="submit" class="button button__form">Оставить заявку</button>
                         </div>
                     </div>
-    
-                    <div class="form-column form-column__second">
-                        <label for="input_4" class="form__subtitle form__subtitle__grey">Сообщение:</label>
-                        <textarea tabindex="4" id="input_4" type="text" name="message" class="form-main__textarea" placeholder="Введите Ваше сообщение" autocomplete="off" onfocus="if (this.placeholder == 'Введите Ваше сообщение') {this.placeholder = '';}" onblur="if (this.placeholder == '') {this.placeholder = 'Введите Ваше сообщение';}"></textarea>
-                        <button type="submit" class="button button__form">Оставить заявку</button>
-                    </div>
-                    
                 </form>
             </div>
-        </section> -->
+        </section>
     
         <!-- <footer class="footer">
             <div class="container container__footer">
