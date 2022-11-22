@@ -1,75 +1,87 @@
 .footer
-    margin-top: 200px
-    padding: 80px 0 36px 0
+    margin-top: 13.3334rem //200px
+    padding: 5.3334rem 0 2.4rem 0 //80px 0 36px 0
     background: #0D1718
-    width: 1920px
-    height: 385px
+    width: 100% //1920px
+    height: 25.6667rem //385px
+    &__title
+        font-family: 'SophieScholl'
+        font-weight: 400
+        font-size: 2.667rem
+        color: $pink_color
+        opacity: 0.88
+    &__subtitle
+        padding: 0.333rem 0 1.667rem 0
+        font-weight: 400
+        font-size: 1rem
+        line-height: 120%
+        color: $white_color
     &__block
-        padding-right: 115px
+        width: min-content
 
     &__social
-        padding-top: 25px
+        padding-top: 1.6667rem //25px
         display: flex
         justify-content: space-between
-        width: 213px
+        width: 14.2rem //213px
     &__nav-title
-        font-family: 'Montserrat'
         font-weight: 600
-        font-size: 15px
+        font-size: 1rem //15px
         letter-spacing: -0.03em
         color: $white_color
-        width: 189px
+        width: max-content //189px
     &__ul
         margin: 0
         list-style: none
-        padding: 15px 0 0 0
+        padding: 1rem 0 0 0 //15px 0 0 0
     &__links
-        padding-bottom: 17px
+        padding-bottom: 1.1333334rem //17px
         &:nth-child(6)
             padding-bottom: 0
     &__link
-        font-family: 'Montserrat'
         font-weight: 400
-        font-size: 14px
+        font-size: 0.933334rem //14px
         color: $white_color
         text-decoration: none
     &__ig-wrapper
         display: flex
         flex-wrap: wrap
-        padding-top: 15px
-        width: 138px
+        padding-top: 1rem //15px
+        width: 8.2rem //138px
     &__img
-        padding: 0 11px 11px 0
+        padding: 0 0.733334rem 0.733334rem 0 //0 11px 11px 0
+        &:nth-child(2n)
+            padding: 0 0 0.733334rem 0
+            
     &__input
-        width: 189px
-        height: 39px
+        width: 12.6rem //189px
+        height: 2.6rem //39px
         border: 1px solid $pink_color
         background-color: rgba(0, 0, 0, 0)
-        padding: 12px 12px
-        margin-bottom: 33px
+        padding: 0.8rem //12px
+        margin-bottom: 2.2rem //33px
         &::placeholder
-            font-family: 'Montserrat'
             font-weight: 500
-            font-size: 13px
+            font-size: 0.866667rem //13px
             letter-spacing: -0.03em
             color: $white_color
         &:focus
             color: $white_color
     &__line
-        width: 1142px
+        max-width: 1103px
         height: 1px
         background: $pink_color
         display: block
         margin: 0 auto
+        //padding: 0 2.6667rem 0 2.6667rem
     &-form__error
         position: absolute
-        margin-top: -30px
+        margin-top: -2rem //-30px
         color: red
-        font-family: 'Montserrat'
         font-weight: 500
-        font-size: 13px
+        font-size: 0.866667rem //13px
         letter-spacing: -0.03em
 
 
 .mb20px
-    margin-bottom: 15px
+    margin-bottom: 1rem //15px

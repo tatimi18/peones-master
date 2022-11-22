@@ -1,3 +1,4 @@
+@import 'base/variables'
 *
 	padding: 0
 	margin: 0
@@ -24,11 +25,15 @@ html, body
 	margin: 0 auto
 	padding: 5.866667rem 2.6667rem 5.3333rem 2.6667rem
 	max-width: 1182px
-	//max-width: 59.4791667%
-	&__footer
-		margin: 0 auto 1.5333rem auto
-		display: flex
 
+.blocks-wrapper
+	display: flex
+	justify-content: space-between
+
+.container-footer
+	margin: 0 auto
+	max-width: 1182px
+	padding: 0 2.6667rem 0 2.6667rem
 
 .container-form
 	width: 1182px
@@ -39,7 +44,6 @@ html, body
 	align-items: center
 
 @import 'base/mixins'
-@import 'base/variables'
 @import 'blocks/main'
 @import 'blocks/buttons'
 @import 'blocks/catalog'
